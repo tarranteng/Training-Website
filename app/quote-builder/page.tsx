@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useMemo, useRef, useState } from "react";
+import Script from "next/script";
 
 type TrainingType = "Initial" | "Refresher";
 type OverlapGroup = "sanding-machines" | "welding-processes" | "milling-machines";
@@ -113,7 +114,7 @@ export default function QuoteBuilderPage() {
   const [totalDelegates, setTotalDelegates] = useState(0);
   const [delegates, setDelegates] = useState<Record<number, number>>({});
   const [showQuote, setShowQuote] = useState(false);
-  const [formState, setFormState] = useState<"idle" | "sending" | "sent" | "error" | "setup">("idle");
+  const [formState, setFormState] = useState<"idle" | "sending" | "sent" | "error" | "setup" | "captcha">("idle");
   const [limitMessage, setLimitMessage] = useState("");
   const calculatorRef = useRef<HTMLElement>(null);
 
@@ -190,6 +191,11 @@ export default function QuoteBuilderPage() {
     setFormState("sending");
     const form = event.currentTarget;
     const formData = new FormData(form);
+    const captchaResponse = formData.get("h-captcha-response");
+    if (typeof captchaResponse !== "string" || !captchaResponse.trim()) {
+      setFormState("captcha");
+      return;
+    }
     formData.append("access_key", accessKey);
     formData.append("subject", "D&TA training quote request");
     formData.append("from_name", "Tarrant Engineering website");
@@ -210,7 +216,9 @@ export default function QuoteBuilderPage() {
   }
 
   return (
-    <main>
+    <>
+      <Script src="https://web3forms.com/client/script.js" strategy="afterInteractive" />
+      <main>
       <section className="hero">
         <div className="schematic schematic-one" aria-hidden="true" />
         <div className="hero-copy">
@@ -327,7 +335,6 @@ export default function QuoteBuilderPage() {
           </div>
         </div>
         <form className="quote-form" onSubmit={submitQuote}>
-          <input className="botcheck" type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" aria-hidden="true" />
           <input type="hidden" name="training_type" value={trainingType} />
           <input type="hidden" name="total_unique_delegates" value={totalDelegates} />
           <input type="hidden" name="training_days" value={roundedDays.toFixed(1)} />
@@ -359,6 +366,9 @@ export default function QuoteBuilderPage() {
               </select>
             </label>
             <label className="full">Practical details for the estimate <span>(optional)</span><textarea name="notes" rows={5} placeholder="Please include the number of relevant machines available and the extent of delegates’ prior experience or training." /></label>
+            <div className="full">
+              <div className="h-captcha" data-captcha="true" />
+            </div>
           </div>
           <div className="submit-row">
             <div><strong>{roundedDays.toFixed(1)} days</strong><span>calculated estimate</span></div>
@@ -367,10 +377,12 @@ export default function QuoteBuilderPage() {
           {formState === "sent" && <p className="form-message success">Thank you — your training plan has been sent.</p>}
           {formState === "error" && <p className="form-message error">The form could not be sent. Please try again.</p>}
           {formState === "setup" && <p className="form-message error">Form delivery is not configured yet. Add the Web3Forms access key as <code>NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY</code>.</p>}
+          {formState === "captcha" && <p className="form-message error">Please complete the spam-protection check before sending your training plan.</p>}
           <p className="privacy-note">Your details will only be used to prepare and respond to this quotation request.</p>
         </form>
       </section>
 
-    </main>
+      </main>
+    </>
   );
 }
