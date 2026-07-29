@@ -1,0 +1,56 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contact Simon Tarrant about D&TA accredited Design and Technology health and safety training.",
+};
+
+const faqs = [
+  ["Where do you provide training?", "Tarrant Engineering is based in Hampshire and primarily serves schools across the South of England. Other locations can be discussed."],
+  ["How is pricing calculated?", "Pricing reflects location, the number of training days and the number of delegates requiring D&TA certification. A tailored estimate is provided after your requirements are reviewed."],
+  ["Can initial and refresher courses be combined?", "No. If any delegate requires initial training, all training booked for your school will be treated as Initial Training. Use the additional information box in the quote builder to describe the extent of delegates’ prior experience or training; Simon will use this when fine-tuning the formal estimate."],
+  ["What information should I provide?", "Your school address, total unique delegates, the courses each delegate group requires and your available working-day hours are the most useful starting points."],
+];
+
+export default function ContactPage() {
+  return (
+    <main>
+      <section className="page-hero contact-hero">
+        <div>
+          <p className="eyebrow"><span /> Contact Tarrant Engineering</p>
+          <h1>A straightforward conversation starts here.</h1>
+          <p>If you already know the courses and delegates involved, the quote builder is the quickest route to a detailed estimate.</p>
+          <Link className="primary-link" href="/quote-builder">Open the quote builder <span>→</span></Link>
+        </div>
+        <div className="contact-card">
+          <span>DIRECT CONTACT</span>
+          <h2>Simon Tarrant</h2>
+          <p>Managing Director<br />Registered D&amp;T H&amp;S Consultant</p>
+          <a href="mailto:simon@tarranteng.co.uk">simon@tarranteng.co.uk</a>
+          <a href="tel:+447704910521">07704 910521</a>
+          <small>Enquiries are normally acknowledged within one working day.</small>
+        </div>
+      </section>
+
+      <section className="faq-section content-section">
+        <div className="section-heading">
+          <p className="eyebrow"><span /> Before you enquire</p>
+          <h2>Useful answers</h2>
+        </div>
+        <div className="faq-grid">
+          {faqs.map(([question, answer], index) => (
+            <article key={question}><span>{String(index + 1).padStart(2, "0")}</span><h3>{question}</h3><p>{answer}</p></article>
+          ))}
+        </div>
+      </section>
+
+      <section className="final-cta">
+        <p className="eyebrow light"><span /> Prefer email?</p>
+        <h2>Tell Simon what your department needs.</h2>
+        <p>Include your school, postcode, likely delegate numbers and any courses you already know are required.</p>
+        <a className="primary-link" href="mailto:simon@tarranteng.co.uk?subject=D%26TA%20training%20enquiry">Email Simon <span>→</span></a>
+      </section>
+    </main>
+  );
+}
