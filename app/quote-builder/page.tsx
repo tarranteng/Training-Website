@@ -339,6 +339,9 @@ export default function QuoteBuilderPage() {
           <input type="hidden" name="total_unique_delegates" value={totalDelegates} />
           <input type="hidden" name="training_days" value={roundedDays.toFixed(1)} />
           <input type="hidden" name="calculated_hours" value={totalHours.toFixed(2)} />
+          <input type="hidden" name="training_start_time" value={start} />
+          <input type="hidden" name="training_finish_time" value={finish} />
+          <input type="hidden" name="break_hours" value={breakHours.toFixed(2)} />
           <input type="hidden" name="training_day_hours" value={dailyHours.toFixed(2)} />
           <input type="hidden" name="estimate_basis" value="Planning estimate only. Formal timing may change after review of machine availability, staff experience, workshop arrangements and other practical delivery factors." />
           <textarea hidden readOnly name="course_plan" value={submissionSummary} />
