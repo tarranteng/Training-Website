@@ -316,9 +316,9 @@ export default function QuoteBuilderPage() {
           )}
 
           <div className="course-toolbar">
-            <div><span>02 / COURSES</span><h3>Select courses &amp; delegates</h3></div>
+            <div><span>02 / COURSES</span><h3>Enter delegate numbers for each course</h3></div>
           </div>
-          {!totalDelegates && <p className="planner-notice">Enter the total number of unique delegates before allocating them to courses.</p>}
+          {!totalDelegates && <p className="planner-notice">Enter the total number of unique delegates (above) before allocating them to courses.</p>}
           {allocationInvalid && <p className="planner-notice error">A course allocation exceeds the permitted group size or the total number of unique delegates.</p>}
           {limitMessage && <p className="planner-notice error" role="alert">{limitMessage}</p>}
           {appliedOverlapGroups.map((overlapGroup) => (
@@ -326,7 +326,7 @@ export default function QuoteBuilderPage() {
           ))}
 
           <div className="course-list">
-            <div className="course-head"><span>Course</span><span>Guided hours (4 delegates)</span><span>Delegates</span></div>
+            <div className="course-head"><span>Course</span><span>Guided hours for ~4 delegates</span><span>Number of Delegates</span></div>
             {courseGroups.map((group) => (
               <details className="course-group" key={group.name}>
                 <summary>
