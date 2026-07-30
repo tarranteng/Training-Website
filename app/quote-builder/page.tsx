@@ -311,7 +311,7 @@ export default function QuoteBuilderPage() {
           </div>
           {trainingType === "Refresher" && (
             <p className="planner-notice refresher" role="status">
-              <strong>Refresher training reminder:</strong> all D&amp;TA training being refreshed must be current and have been completed within the past five years.
+              <strong>Refresher training reminder:</strong>{" "}all D&amp;TA training being refreshed must be current and have been completed within the past five years.
             </p>
           )}
 
