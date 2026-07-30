@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 const courseCards = [
-  { code: "SCHS", title: "Secondary core", copy: "Core health and safety training for teachers and technicians.", image: "/workshop-training.jpg" },
-  { code: "SMHS", title: "Materials", copy: "Hand tools, portable equipment, processes and workshop machinery.", image: "/metalwork-detail.jpg" },
+  { code: "CORE", title: "Core courses", copy: "Primary, secondary, systems and site-staff health and safety training.", image: "/core-safety.jpg" },
+  { code: "WORKSHOP", title: "Standard workshop equipment", copy: "Hand tools, portable equipment and everyday workshop machines.", image: "/standard-workshop.jpg" },
   { code: "SFHS", title: "Food technology", copy: "Safe working practice in school food rooms and preparation spaces.", image: "/food-technology.jpg" },
   { code: "STHS", title: "Textiles", copy: "Textiles technology training grounded in practical classroom work.", image: "/textiles-work.jpg" },
+  { code: "WOOD", title: "Specialist woodworking", copy: "Lathes, routers, sanding, mortising and specialist saws.", image: "/specialist-woodworking.jpg" },
+  { code: "METAL / ENG", title: "Specialist metalworking & engineering", copy: "Casting, lathes, milling, welding and metalworking processes.", image: "/specialist-metalworking.jpg" },
 ];
 
 const testimonials = [
@@ -48,7 +50,7 @@ export default function HomePage() {
       <section className="trust-strip" aria-label="Professional credentials">
         <div><strong>Senior registered consultant</strong><span>D&amp;T health &amp; safety specialist</span></div>
         <div><strong>D&amp;TA accredited</strong><span>Recognised training and certification</span></div>
-        <a href="https://www.designtechnology.org.uk/consultant-directory/consultants/simon-tarrant/" target="_blank" rel="noreferrer"><strong>Independently verifiable</strong><span>View Simon on the D&amp;TA directory ↗</span></a>
+        <a href="https://www.designtechnology.org.uk/consultant-directory/consultants/simon-tarrant/" target="_blank" rel="noreferrer"><strong>Independently verifiable</strong><span>Find Simon on the D&amp;TA directory ↗</span></a>
       </section>
 
       <section className="home-courses content-section" id="training-options">
