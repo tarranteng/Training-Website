@@ -230,10 +230,10 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .section-intro h2 { font-size: clamp(40px, 4.8vw, 66px); margin-bottom: 20px; }
 .section-intro > p:last-child { color: #bcc6c5; font-size: 18px; line-height: 1.6; }
 .planner-shell { max-width: 1240px; margin: 0 auto; background: var(--white); color: var(--ink); border-top: 6px solid var(--teal); box-shadow: 18px 18px 0 #101719; }
-.setup-toolbar { padding: 28px 34px 20px; display: grid; grid-template-columns: minmax(280px, .8fr) minmax(320px, 1.2fr); gap: 30px; align-items: end; background: #e9ebe8; }
+.setup-toolbar { padding: 28px 34px 24px; display: grid; grid-template-columns: minmax(390px, 42%) minmax(0, 1fr); gap: 30px; align-items: center; background: #e9ebe8; }
 .setup-toolbar span { color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: .13em; }
-.setup-toolbar h3 { margin: 6px 0 0; font-size: 28px; }
-.setup-toolbar p { max-width: 650px; margin: 0; color: #53605e; font-size: 14px; line-height: 1.55; }
+.setup-toolbar h3 { max-width: 430px; margin: 6px 0 0; font-size: clamp(28px, 2.35vw, 34px); line-height: 1.2; }
+.setup-toolbar p { width: min(100%, 500px); margin: 0; justify-self: start; color: #53605e; font-size: 14px; line-height: 1.55; }
 .settings-bar { padding: 18px 24px 26px; display: grid; grid-template-columns: 1.2fr 1.35fr repeat(3, .8fr) .8fr; gap: 18px; align-items: end; background: #e9ebe8; border-bottom: 1px solid #cbd0cd; }
 .settings-bar fieldset { border: 0; margin: 0; padding: 0; }
 .settings-bar label, .settings-bar legend { display: grid; gap: 8px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
@@ -378,6 +378,7 @@ footer p { max-width: 520px; font-size: 12px; color: #6c7472; text-align: right;
   .hero-panel h2 { margin-top: 55px; }
   .mini-result { align-items: start; flex-direction: column; }
   .setup-toolbar { padding-inline: 18px; }
+  .setup-toolbar h3 { font-size: 24px; }
   .settings-bar { grid-template-columns: 1fr; }
   .course-toolbar { align-items: stretch; flex-direction: column; padding-inline: 18px; }
   .course-head { display: none; }
