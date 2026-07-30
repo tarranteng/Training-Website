@@ -112,7 +112,7 @@ export default function HomePage() {
       <section className="final-cta">
         <p className="eyebrow light"><span /> Start with what you know</p>
         <h2>Ready to plan your training?</h2>
-        <p>Prices from £400 per day for on-site training. Final pricing reflects location, training duration and the number of delegates requiring certification; a tailored estimate is normally provided within 24 hours.</p>
+        <p>Prices from £400 per day for in-school training. Final pricing reflects location, training duration and the number of delegates requiring certification; a tailored estimate is normally provided within 24 hours.</p>
         <div className="hero-actions">
           <Link className="primary-link" href="/quote-builder">Build your plan <span>→</span></Link>
           <Link className="text-link light-link" href="/contact">Contact Simon directly</Link>
