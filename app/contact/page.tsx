@@ -19,7 +19,7 @@ export default function ContactPage() {
       <section className="page-hero contact-hero">
         <div>
           <p className="eyebrow"><span /> Contact Tarrant Engineering</p>
-          <h1>A straightforward conversation starts here.</h1>
+          <h1>Straightforward conversations start here.</h1>
           <p>If you already know the courses and delegates involved, the quote builder is the quickest route to a detailed estimate.</p>
           <Link className="primary-link" href="/quote-builder">Open the quote builder <span>→</span></Link>
         </div>
