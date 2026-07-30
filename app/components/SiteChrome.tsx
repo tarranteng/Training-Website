@@ -2,16 +2,28 @@ import Link from "next/link";
 
 const nav = [
   { href: "/about", label: "About Simon" },
-  { href: "/quote-builder", label: "Quote builder" },
+  { href: "/contact#faqs", label: "FAQs" },
   { href: "/contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
   return (
     <header className="global-header">
-      <Link href="/" className="global-brand" aria-label="Tarrant Engineering home">
-        <img src="/tarrant-engineering-logo.png" alt="Tarrant Engineering" />
-      </Link>
+      <div className="header-branding">
+        <Link href="/" className="global-brand" aria-label="Tarrant Engineering home">
+          <img src="/tarrant-engineering-logo.png" alt="Tarrant Engineering" />
+        </Link>
+        <span className="brand-divider" aria-hidden="true" />
+        <a
+          className="header-association"
+          href="https://www.designtechnology.org.uk/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Visit the Design and Technology Association website"
+        >
+          <img src="/dta-logo.png" alt="Design and Technology Association" />
+        </a>
+      </div>
       <nav aria-label="Main navigation">
         {nav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
       </nav>
