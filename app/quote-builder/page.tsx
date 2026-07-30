@@ -226,7 +226,7 @@ export default function QuoteBuilderPage() {
           <h1>Training<br />quote<br />builder</h1>
           <p className="hero-lead">Plan the training your school needs and get an immediate estimate of the time involved.</p>
           <button className="primary-cta" onClick={scrollToCalculator}>Build my training plan <span>→</span></button>
-          <p className="micro-copy">A planning estimate from Tarrant Engineering. Pricing is confirmed after review.</p>
+          <p className="micro-copy">Prices from £400 per day for on-site training. Your formal price is confirmed after review.</p>
         </div>
         <aside className="hero-panel">
           <p className="panel-number">01 / PLAN</p>
