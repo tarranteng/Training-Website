@@ -270,7 +270,7 @@ export default function QuoteBuilderPage() {
           <div className="setup-toolbar">
             <div>
               <span>01 / SETUP</span>
-              <h3>Enter your delegates and training day</h3>
+              <h3>Enter delegate numbers<br />and timings for the day</h3>
             </div>
             <p>Start with the total number of different people attending. Choose the training type, then adjust the start, finish and break times if required.</p>
           </div>
