@@ -21,7 +21,7 @@ export default function AboutPage() {
       <section className="about-story content-section">
         <div className="story-number">20<span>+</span><small>years in D&amp;T education</small></div>
         <div>
-          <h2>Training built around understanding—not box-ticking.</h2>
+          <h2>Training built around understanding, not box-ticking.</h2>
           <p className="lead">Simon combines technical knowledge with more than two decades of experience in Design &amp; Technology education.</p>
           <p>That means the training is grounded in the way school workshops, food rooms and textiles spaces actually operate. The aim is not simply to complete a course: it is to help teachers and technicians understand safe working practice and feel confident applying it after Simon has left.</p>
           <p>Programmes are planned around the equipment, delegates and certification needs of each school. Where any delegate requires initial training, the school’s programme is classed as initial training. Every proposal is reviewed personally before a quotation is issued.</p>
