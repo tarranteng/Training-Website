@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const courseCards = [
-  { title: "Core courses", copy: "Primary, secondary, systems and site-staff health and safety training.", image: "/core-safety.jpg" },
+  { title: "Core courses", copy: "Primary, secondary, technician and site-staff health and safety training.", image: "/core-safety.jpg" },
   { title: "Workshop equipment", copy: "Full range of hand tools, portable equipment, machines and processes.", image: "/standard-workshop.jpg" },
   { title: "Food technology", copy: "Safe working practice in school food rooms and preparation spaces.", image: "/food-technology.jpg" },
   { title: "Textiles", copy: "Textiles technology training grounded in practical classroom work.", image: "/textiles-work.jpg" },
@@ -56,7 +56,7 @@ export default function HomePage() {
         <div className="section-heading">
           <p className="eyebrow"><span /> Course coverage</p>
           <h2>Training that reflects the reality of school D&amp;T.</h2>
-          <p>From core certification to specialist machinery, each programme is practical, relevant and tailored to the equipment your team uses.</p>
+          <p>From core certification to specialist machinery, each programme is practical, relevant and tailored to the equipment your team uses. </p>
         </div>
         <div className="course-card-grid">
           {courseCards.map((course) => (
@@ -66,7 +66,7 @@ export default function HomePage() {
             </article>
           ))}
         </div>
-        <Link className="section-link" href="/quote-builder">See the full list and build a training plan <span>→</span></Link>
+        <Link className="section-link" href="/quote-builder">See the full list of courses and build a training plan <span>→</span></Link>
       </section>
 
       <section className="planner-promo">
