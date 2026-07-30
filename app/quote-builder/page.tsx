@@ -328,7 +328,7 @@ export default function QuoteBuilderPage() {
         <div className="quote-copy">
           <p className="eyebrow"><span /> Formal estimate</p>
           <h2>Ready to turn the plan into a quote?</h2>
-          <p>Send your school and contact details with the calculated training plan. Tarrant Engineering will review the combination of courses and respond with a formal estimate.</p>
+          <p>Send your name, email, organisation and postcode with the calculated training plan. Tarrant Engineering will review the combination of courses and respond with a formal estimate.</p>
           <div className="association">
             <strong>D&amp;TA accredited training</strong>
             <span>Training aligned with the Design &amp; Technology Association</span>
@@ -347,27 +347,10 @@ export default function QuoteBuilderPage() {
           <textarea hidden readOnly name="course_plan" value={submissionSummary} />
           <div className="form-grid">
             <div className="form-section-heading full"><span>01</span><h3>Contact details</h3></div>
-            <label>First name<input required name="first_name" autoComplete="given-name" /></label>
-            <label>Last name<input required name="last_name" autoComplete="family-name" /></label>
-            <label className="full">Organisation<input required name="organisation" autoComplete="organization" /></label>
+            <label>Name<input required name="name" autoComplete="name" /></label>
             <label>Email<input required type="email" name="email" autoComplete="email" /></label>
-            <label>Billing email <span>(optional)</span><input type="email" name="billing_email" /></label>
-            <label>Telephone<input required type="tel" name="telephone" autoComplete="tel" /></label>
-
-            <div className="form-section-heading full"><span>02</span><h3>Invoicing address</h3></div>
-            <label className="full">Address line 1<input required name="address_line_1" autoComplete="address-line1" /></label>
-            <label className="full">Address line 2 <span>(optional)</span><input name="address_line_2" autoComplete="address-line2" /></label>
-            <label className="full">Address line 3 <span>(optional)</span><input name="address_line_3" autoComplete="address-line3" /></label>
-            <label>Town<input required name="town" autoComplete="address-level2" /></label>
-            <label>County <span>(optional)</span><input name="county" autoComplete="address-level1" /></label>
+            <label>Organisation<input required name="organisation" autoComplete="organization" /></label>
             <label>Postcode<input required name="postcode" autoComplete="postal-code" /></label>
-            <label>Country
-              <select required name="country" autoComplete="country-name" defaultValue="United Kingdom">
-                <option>United Kingdom</option>
-                <option>Ireland</option>
-                <option>Other</option>
-              </select>
-            </label>
             <label className="full">Practical details for the estimate <span>(optional)</span><textarea name="notes" rows={5} placeholder="Please include the number of relevant machines available and the extent of delegates’ prior experience or training." /></label>
             <div className="full">
               <div className="h-captcha" data-captcha="true" />
