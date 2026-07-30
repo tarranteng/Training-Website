@@ -77,10 +77,10 @@ export default function HomePage() {
           <Link className="primary-link" href="/quote-builder">Open the quote builder <span>→</span></Link>
         </div>
         <div className="planner-preview" aria-hidden="true">
-          <span>TRAINING PLAN / LIVE</span>
-          <div><strong>SCHS</strong><i>4 delegates</i></div>
-          <div><strong>S1HS · Band saw</strong><i>2 delegates</i></div>
-          <div><strong>SFHS</strong><i>3 delegates</i></div>
+          <span>EXAMPLE TRAINING PLAN</span>
+          <div><strong>SCHS - Secondary Core</strong><i>4 delegates</i></div>
+          <div><strong>S1HS-1 - Band saw</strong><i>2 delegates</i></div>
+          <div><strong>SFHS - Secondary Food</strong><i>3 delegates</i></div>
           <b>Estimated training: 2.5 days</b>
         </div>
       </section>
