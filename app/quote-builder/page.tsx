@@ -253,7 +253,7 @@ export default function QuoteBuilderPage() {
         </div>
         <aside className="hero-panel">
           <p className="panel-number">01 / PLAN</p>
-          <h2>From workshop need<br />to practical plan.</h2>
+          <h2>From workshop need to practical plan.</h2>
           <p>Select initial or refresher training, add delegates to the relevant courses and adjust the working day. Your estimate updates instantly.</p>
           <div className="mini-result"><span>LIVE ESTIMATE</span><strong>{roundedDays ? roundedDays.toFixed(1) : "0.0"} days</strong></div>
         </aside>
