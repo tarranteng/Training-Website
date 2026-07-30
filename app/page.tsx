@@ -35,7 +35,7 @@ export default function HomePage() {
         <div className="home-hero-copy">
           <p className="eyebrow"><span /> D&amp;TA accredited training</p>
           <h1>Safer workshops.<br />More confident teams.</h1>
-          <p>Practical, hands-on health and safety training for Design &amp; Technology departments across Hampshire and the South of England.</p>
+          <p>Practical, hands-on health and safety training for Design &amp; Technology departments across the South of England.</p>
           <div className="hero-actions">
             <Link className="primary-link" href="/quote-builder">Plan your training <span>→</span></Link>
           </div>
