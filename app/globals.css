@@ -101,9 +101,12 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .portrait-frame::before { content: ""; position: absolute; inset: 0 0 18px 18px; background: var(--teal); }
 .portrait-frame img { width: 100%; aspect-ratio: 4/5; position: relative; z-index: 1; object-fit: cover; object-position: center top; filter: saturate(.75); }
 .about-preview .lead, .about-story .lead { font-weight: 700; color: var(--navy); }
-.testimonial-section { padding: clamp(70px, 8vw, 110px) clamp(24px, 10vw, 160px); background: #dce9e6; text-align: center; }
-.testimonial-section blockquote { max-width: 1050px; margin: 0 auto 25px; font: 700 clamp(26px, 3vw, 40px)/1.35 Georgia, serif; color: var(--navy); }
-.testimonial-section cite { font-style: normal; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.testimonial-section { padding: clamp(64px, 7vw, 92px) clamp(24px, 7vw, 110px); background: #dce9e6; }
+.testimonial-section > .eyebrow { justify-content: center; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 1180px; margin: 30px auto 0; }
+.testimonial-card { margin: 0; padding: clamp(24px, 3vw, 34px); background: rgba(255,255,255,.62); border-top: 4px solid var(--teal); }
+.testimonial-card blockquote { margin: 0 0 24px; font: 600 clamp(18px, 1.7vw, 22px)/1.5 Georgia, serif; color: var(--navy); }
+.testimonial-card figcaption { color: #4d5957; font-size: 11px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
 .final-cta { padding: clamp(80px, 9vw, 140px) clamp(24px, 9vw, 145px); background: var(--navy); color: white; }
 .final-cta > p:not(.eyebrow) { max-width: 850px; color: #ccd8d6; }
 .light-link { color: white; }
@@ -300,6 +303,7 @@ footer p { max-width: 520px; font-size: 12px; color: #6c7472; text-align: right;
   .trust-strip > *, .info-band div { border-left: 0; border-top: 1px solid rgba(255,255,255,.18); }
   .trust-strip > *:first-child, .info-band div:first-child { border-top: 0; }
   .course-card-grid { grid-template-columns: 1fr 1fr; }
+  .testimonial-grid { grid-template-columns: 1fr; }
   .consultancy-grid { grid-template-columns: 1fr 1fr; }
   .course-group-card { grid-template-columns: 1fr; }
   .about-portrait { justify-self: start; }

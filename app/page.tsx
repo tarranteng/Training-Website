@@ -7,6 +7,25 @@ const courseCards = [
   { code: "STHS", title: "Textiles", copy: "Textiles technology training grounded in practical classroom work.", image: "/textiles-work.jpg" },
 ];
 
+const testimonials = [
+  {
+    quote: "Thanks for the training, Simon. Everyone here really enjoyed it and we all feel a lot more confident now.",
+    school: "Bournemouth High School for Girls",
+  },
+  {
+    quote: "The training was great, we really enjoyed it, thanks.",
+    school: "Bourne Community College",
+  },
+  {
+    quote: "Thank you again for today. It was a very useful training day and we thoroughly enjoyed it.",
+    school: "Ryde School",
+  },
+  {
+    quote: "A really good day, I learned a lot – thank you.",
+    school: "Petersfield School",
+  },
+];
+
 export default function HomePage() {
   return (
     <main>
@@ -78,8 +97,15 @@ export default function HomePage() {
       </section>
 
       <section className="testimonial-section">
-        <blockquote>“Thanks for the training, Simon. Everyone here really enjoyed it and we all feel a lot more confident now.”</blockquote>
-        <cite>Bournemouth High School for Girls</cite>
+        <p className="eyebrow"><span /> Feedback from schools</p>
+        <div className="testimonial-grid">
+          {testimonials.map((testimonial) => (
+            <figure className="testimonial-card" key={testimonial.school}>
+              <blockquote>“{testimonial.quote}”</blockquote>
+              <figcaption>{testimonial.school}</figcaption>
+            </figure>
+          ))}
+        </div>
       </section>
 
       <section className="final-cta">
