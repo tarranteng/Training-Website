@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   ["Where do you provide training?", "Tarrant Engineering is based in Hampshire and primarily serves schools across the South of England. Other locations can be discussed."],
-  ["How is pricing calculated?", "Pricing reflects location, the number of training days and the number of delegates requiring D&TA certification. A tailored estimate is provided after your requirements are reviewed."],
+  ["How is pricing calculated?", "Prices start from £400 per day for on-site training. Final pricing reflects location, the number of training days and the number of delegates requiring D&TA certification. A tailored estimate is provided after your requirements are reviewed."],
   ["Can initial and refresher courses be combined?", "No. If any delegate requires initial training, all training booked for your school will be treated as Initial Training. Use the additional information box in the quote builder to describe the extent of delegates’ prior experience or training; Simon will use this when fine-tuning the formal estimate."],
   ["What information should I provide?", "Your school address, total unique delegates, the courses each delegate group requires and your available working-day hours are the most useful starting points."],
 ];
