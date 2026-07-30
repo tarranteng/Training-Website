@@ -73,7 +73,7 @@ export default function HomePage() {
         <div>
           <p className="eyebrow light"><span /> Fewer emails, clearer requirements</p>
           <h2>Build a training plan before you enquire.</h2>
-          <p>Select initial or refresher training, identify exactly which delegates need each course and see the estimated number of training days.</p>
+          <p>Select initial or refresher training, enter how many staff need each course and see the estimated number of training days in real time.</p>
           <Link className="primary-link" href="/quote-builder">Open the quote builder <span>→</span></Link>
         </div>
         <div className="planner-preview" aria-hidden="true">
