@@ -27,7 +27,7 @@ export function SiteHeader() {
       <nav aria-label="Main navigation">
         {nav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
       </nav>
-      <Link className="nav-cta" href="/quote-builder">Plan training <span>→</span></Link>
+      <Link className="nav-cta" href="/quote-builder">Plan your training and get a quote <span>→</span></Link>
     </header>
   );
 }
