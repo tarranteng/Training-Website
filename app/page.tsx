@@ -93,7 +93,7 @@ export default function HomePage() {
           <p className="lead">Simon Tarrant is a Registered D&amp;T Health &amp; Safety Consultant with more than 20 years’ experience in Design &amp; Technology education.</p>
           <p>Training is focused on helping teachers and technicians use equipment confidently, understand their responsibilities and build safer working practice into everyday teaching.</p>
           <p>Simon also supports secondary D&amp;T departments with curriculum and qualifications planning, subject review, CPD, facilities, technical resources and specialist technologies.</p>
-          <Link className="section-link" href="/about#consultancy">Meet Simon and explore consultancy support <span>→</span></Link>
+          <Link className="section-link" href="/about#consultancy">Find out more about bespoke CPD and consultancy support <span>→</span></Link>
         </div>
       </section>
 
