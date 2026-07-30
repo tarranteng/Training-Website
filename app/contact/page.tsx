@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  ["Where do you provide training?", "Tarrant Engineering is based in Hampshire and primarily serves schools across the South of England. Other locations can be discussed."],
+  ["Where do you provide training?", "Tarrant Engineering serves schools across Hampshire, Dorset, Wiltshire, Berkshire, Surrey and West Sussex. Other locations may be available by arrangement."],
   ["How is pricing calculated?", "Prices start from £400 per day for on-site training. Final pricing reflects location, the number of training days and the number of delegates requiring D&TA certification. A tailored estimate is provided after your requirements are reviewed."],
-  ["Can initial and refresher courses be combined?", "No. If any delegate requires initial training, all training booked for your school will be treated as Initial Training. Use the additional information box in the quote builder to describe the extent of delegates’ prior experience or training; Simon will use this when fine-tuning the formal estimate."],
+  ["Can initial and refresher courses be combined?", "Usually not for the same delegate. If someone needs initial training on any item, all of that delegate’s training will normally be treated as initial; otherwise D&TA charges two certification fees (£60 rather than £30). Unless initial and refresher delegates can be clearly separated, the school’s booking will therefore be treated as initial training. If the groups are distinct, submit two quote-builder plans and Simon will combine them into a practical schedule. Use the additional information box to explain relevant prior experience or training."],
   ["What information should I provide?", "Your organisation and postcode, total unique delegates, the courses each delegate group requires and your available working-day hours are the most useful starting points."],
 ];
 
