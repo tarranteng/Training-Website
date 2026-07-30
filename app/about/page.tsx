@@ -67,8 +67,13 @@ export default function AboutPage() {
       </section>
 
       <section className="testimonial-section">
-        <blockquote>“Thanks for the training, Simon. Everyone here really enjoyed it and we all feel a lot more confident now.”</blockquote>
-        <cite>Bournemouth High School for Girls</cite>
+        <p className="eyebrow"><span /> Feedback from schools</p>
+        <div className="testimonial-grid testimonial-grid-single">
+          <figure className="testimonial-card">
+            <blockquote>“Thanks for the training, Simon. Everyone here really enjoyed it and we all feel a lot more confident now.”</blockquote>
+            <figcaption>Bournemouth High School for Girls</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section className="final-cta">
