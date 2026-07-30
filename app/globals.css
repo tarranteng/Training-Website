@@ -110,6 +110,7 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .testimonial-section { padding: clamp(64px, 7vw, 92px) clamp(24px, 7vw, 110px); background: #dce9e6; }
 .testimonial-section > .eyebrow { justify-content: center; }
 .testimonial-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 1180px; margin: 30px auto 0; }
+.testimonial-grid-single { grid-template-columns: minmax(0, 780px); justify-content: center; }
 .testimonial-card { margin: 0; padding: clamp(24px, 3vw, 34px); background: rgba(255,255,255,.62); border-top: 4px solid var(--teal); }
 .testimonial-card blockquote { margin: 0 0 24px; font: 600 clamp(18px, 1.7vw, 22px)/1.5 Georgia, serif; color: var(--navy); }
 .testimonial-card figcaption { color: #4d5957; font-size: 11px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }

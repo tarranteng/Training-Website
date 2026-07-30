@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const courseCards = [
-  { code: "CORE", title: "Core courses", copy: "Primary, secondary, systems and site-staff health and safety training.", image: "/core-safety.jpg" },
-  { code: "WORKSHOP", title: "Standard workshop equipment", copy: "Hand tools, portable equipment and everyday workshop machines.", image: "/standard-workshop.jpg" },
-  { code: "SFHS", title: "Food technology", copy: "Safe working practice in school food rooms and preparation spaces.", image: "/food-technology.jpg" },
-  { code: "STHS", title: "Textiles", copy: "Textiles technology training grounded in practical classroom work.", image: "/textiles-work.jpg" },
-  { code: "WOOD", title: "Specialist woodworking", copy: "Lathes, routers, sanding, mortising and specialist saws.", image: "/specialist-woodworking.jpg" },
-  { code: "METAL / ENG", title: "Specialist metalworking & engineering", copy: "Casting, lathes, milling, welding and metalworking processes.", image: "/specialist-metalworking.jpg" },
+  { title: "Core courses", copy: "Primary, secondary, systems and site-staff health and safety training.", image: "/core-safety.jpg" },
+  { title: "Workshop equipment", copy: "Full range of hand tools, portable equipment, machines and processes.", image: "/standard-workshop.jpg" },
+  { title: "Food technology", copy: "Safe working practice in school food rooms and preparation spaces.", image: "/food-technology.jpg" },
+  { title: "Textiles", copy: "Textiles technology training grounded in practical classroom work.", image: "/textiles-work.jpg" },
+  { title: "Specialist woodworking", copy: "Lathes, routers, sanding, mortising, planing and sawing machines.", image: "/specialist-woodworking.jpg" },
+  { title: "Specialist metalworking & engineering", copy: "Casting, lathes, milling, welding and metalworking processes.", image: "/specialist-metalworking.jpg" },
 ];
 
 const testimonials = [
@@ -38,7 +38,6 @@ export default function HomePage() {
           <p>Practical, hands-on health and safety training for Design &amp; Technology departments across Hampshire and the South of England.</p>
           <div className="hero-actions">
             <Link className="primary-link" href="/quote-builder">Plan your training <span>→</span></Link>
-            <Link className="text-link" href="#training-options">Training coverage</Link>
           </div>
         </div>
         <div className="home-hero-image">
@@ -61,9 +60,9 @@ export default function HomePage() {
         </div>
         <div className="course-card-grid">
           {courseCards.map((course) => (
-            <article className="home-course-card" key={course.code}>
+            <article className="home-course-card" key={course.title}>
               <img src={course.image} alt="" />
-              <div><span>{course.code}</span><h3>{course.title}</h3><p>{course.copy}</p></div>
+              <div><h3>{course.title}</h3><p>{course.copy}</p></div>
             </article>
           ))}
         </div>

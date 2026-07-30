@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   },
   description: "D&TA accredited Design and Technology health and safety training for schools across Hampshire and the South of England.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/tarrant-favicon.svg",
+    shortcut: "/tarrant-favicon.svg",
   },
 };
 
