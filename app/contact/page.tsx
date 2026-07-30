@@ -33,7 +33,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="faq-section content-section">
+      <section className="faq-section content-section" id="faqs">
         <div className="section-heading">
           <p className="eyebrow"><span /> Before you enquire</p>
           <h2>Useful answers</h2>
