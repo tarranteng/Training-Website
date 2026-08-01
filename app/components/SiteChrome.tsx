@@ -46,7 +46,7 @@ export function SiteFooter() {
         <Link href="/privacy">Privacy</Link>
       </div>
       <div className="footer-meta">
-        <p>Tarrant Engineering Ltd · Company no. 06009054 · Hampshire, UK</p>
+        <p>Tarrant Engineering Limited · Company no. 06009054 · Hampshire, UK</p>
         <p><a href="mailto:simon@tarranteng.co.uk">simon@tarranteng.co.uk</a> · <a href="tel:+447704910521">07704 910521</a></p>
       </div>
     </footer>
