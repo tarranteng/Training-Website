@@ -1,4 +1,31 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+const pageDescription = "D&TA-accredited health and safety training for school Design & Technology departments across Hampshire and southern England. Plan training from £400 per day.";
+
+export const metadata: Metadata = {
+  title: { absolute: "D&TA Health & Safety Training | Tarrant Engineering" },
+  description: pageDescription,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "Tarrant Engineering",
+    url: "/",
+    title: "D&TA Health & Safety Training | Tarrant Engineering",
+    description: pageDescription,
+    images: [{
+      url: "/workshop-training.jpg",
+      alt: "Practical Design and Technology workshop training",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "D&TA Health & Safety Training | Tarrant Engineering",
+    description: pageDescription,
+    images: ["/workshop-training.jpg"],
+  },
+};
 
 const courseCards = [
   { title: "Core courses", copy: "Primary, secondary, technician and site-staff health and safety training.", image: "/core-safety.jpg" },
