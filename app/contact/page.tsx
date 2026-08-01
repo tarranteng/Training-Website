@@ -28,7 +28,7 @@ export default function ContactPage() {
           <h2>Simon Tarrant</h2>
           <p>Managing Director<br />Registered D&amp;T H&amp;S Consultant</p>
           <a href="mailto:simon@tarranteng.co.uk">simon@tarranteng.co.uk</a>
-          <a href="tel:+447704910521">07704 910521</a>
+          <p>Simon is usually teaching or delivering training during office hours but can arrange a phone call via email if you'd like to talk over the phone</p>
           <small>Enquiries are normally acknowledged within one working day.</small>
         </div>
       </section>
