@@ -2,8 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Contact Simon Tarrant about D&TA accredited Design and Technology health and safety training.",
+  title: "Contact & D&TA Training FAQs",
+  description: "Contact Simon Tarrant about D&TA-accredited school D&T health and safety training. Find answers on pricing, locations, initial and refresher courses.",
+  alternates: { canonical: "/contact/" },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "Tarrant Engineering",
+    url: "/contact/",
+    title: "Contact & D&TA Training FAQs | Tarrant Engineering",
+    description: "Contact Simon Tarrant about D&TA-accredited school D&T health and safety training, pricing, locations and course requirements.",
+    images: [{
+      url: "/core-safety.jpg",
+      alt: "Protective equipment used in Design and Technology training",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact & D&TA Training FAQs | Tarrant Engineering",
+    description: "Contact Simon Tarrant about D&TA-accredited school D&T health and safety training.",
+    images: ["/core-safety.jpg"],
+  },
 };
 
 const faqs = [
@@ -28,7 +47,7 @@ export default function ContactPage() {
           <h2>Simon Tarrant</h2>
           <p>Managing Director<br />Registered D&amp;T H&amp;S Consultant</p>
           <a href="mailto:simon@tarranteng.co.uk">simon@tarranteng.co.uk</a>
-          <p>Simon is usually teaching or delivering training during office hours so please mention in your email if you'd like to discuss your requirements over the phone</p>
+          <p>Simon is usually teaching or delivering training during office hours so please mention in your email if you&apos;d like to discuss your requirements over the phone</p>
           <small>Enquiries are normally acknowledged within one working day.</small>
         </div>
       </section>
