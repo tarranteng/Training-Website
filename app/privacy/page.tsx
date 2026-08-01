@@ -1,6 +1,24 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Privacy" };
+export const metadata: Metadata = {
+  title: "Privacy Notice",
+  description: "How Tarrant Engineering Limited collects and uses information submitted through training enquiries and quote requests.",
+  alternates: { canonical: "/privacy/" },
+  robots: { index: false, follow: true },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "Tarrant Engineering",
+    url: "/privacy/",
+    title: "Privacy Notice | Tarrant Engineering",
+    description: "How Tarrant Engineering Limited collects and uses information submitted through training enquiries and quote requests.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy Notice | Tarrant Engineering",
+    description: "How Tarrant Engineering Limited collects and uses information submitted through training enquiries and quote requests.",
+  },
+};
 
 export default function PrivacyPage() {
   return (
