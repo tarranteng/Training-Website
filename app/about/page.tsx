@@ -2,8 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Simon",
-  description: "Meet Simon Tarrant, Managing Director and Registered D&T Health & Safety Consultant.",
+  title: "Simon Tarrant, Registered D&T H&S Consultant",
+  description: "Meet Simon Tarrant, a Registered D&T Health & Safety Consultant with 20+ years in education, offering accredited training and secondary D&T consultancy.",
+  alternates: { canonical: "/about/" },
+  openGraph: {
+    type: "profile",
+    locale: "en_GB",
+    siteName: "Tarrant Engineering",
+    url: "/about/",
+    title: "Simon Tarrant | Registered D&T H&S Consultant",
+    description: "Meet Simon Tarrant, a Registered D&T Health & Safety Consultant with 20+ years in education, offering accredited training and secondary D&T consultancy.",
+    images: [{
+      url: "/simon-tarrant.png",
+      alt: "Simon Tarrant, Registered D&T Health & Safety Consultant",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Simon Tarrant | Registered D&T H&S Consultant",
+    description: "Registered D&T Health & Safety Consultant offering accredited training and secondary D&T consultancy.",
+    images: ["/simon-tarrant.png"],
+  },
 };
 
 export default function AboutPage() {
