@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 };
 
 const courseCards = [
-  { title: "Core courses", copy: "Primary, secondary, technician and site-staff health and safety training.", image: "/core-safety.jpg" },
+  { title: "Core courses", copy: "Primary, secondary, technician and site-staff health and safety training including COSHH and compliance with BS4163.", image: "/core-safety.jpg" },
   { title: "Workshop equipment", copy: "Full range of hand tools, portable equipment, machines and processes.", image: "/standard-workshop.jpg" },
   { title: "Food technology", copy: "Safe working practice in school food rooms and preparation spaces.", image: "/food-technology.jpg" },
   { title: "Textiles", copy: "Textiles technology training grounded in practical classroom work.", image: "/textiles-work.jpg" },
