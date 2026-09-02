@@ -37,7 +37,6 @@ export default function PrivacyPage() {
         <p>You may ask what personal information is held about you, request a correction or ask for information to be deleted where there is no continuing legal or business need to retain it.</p>
         <h2>Contact</h2>
         <p>For privacy questions, email <a href="mailto:simon@tarranteng.co.uk">simon@tarranteng.co.uk</a>.</p>
-        <p className="legal-note">This notice should be reviewed before the public launch and whenever the website’s forms or service providers change.</p>
       </section>
     </main>
   );
