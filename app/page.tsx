@@ -76,7 +76,7 @@ export default function HomePage() {
       <section className="trust-strip" aria-label="Professional credentials">
         <div><strong>Senior registered consultant</strong><span>D&amp;T Health &amp; Safety specialist</span></div>
         <div><strong>D&amp;TA accredited</strong><span>Recognised training and certification</span></div>
-        <a href="https://www.designtechnology.org.uk/consultant-directory/consultants/simon-tarrant/" target="_blank" rel="noreferrer"><strong>Independently verifiable</strong><span>Find Simon on the D&amp;TA directory ↗</span></a>
+        <a href="https://www.designtechnology.org.uk/organisation/member-directory/24861" target="_blank" rel="noreferrer"><strong>Independently verifiable</strong><span>Find Simon on the D&amp;TA directory ↗</span></a>
       </section>
 
       <section className="home-courses content-section" id="training-options">
